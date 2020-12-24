@@ -1,0 +1,93 @@
+.article>.container{
+    display: flex;
+    justify-content: center;
+}
+.article>.container>.col{
+    width: 1000px;
+    display: flex;margin-bottom:50px;
+    box-sizing: border-box;
+    border: 1px solid #eeeeee;
+}
+.article>.container>.col>.picture{
+    background-image: url(pictures/article-1.jpg);
+    width: 50%;height: 300px;
+    background-size: cover;
+    opacity: .7;
+}
+.article>.container>.col>.picture-1{
+    background-image: url(pictures/article-1.jpg); 
+}
+.article>.container>.col>.picture-2{
+    background-image: url(pictures/article-2.jpg); 
+}
+.article>.container>.col>.picture-1:hover,
+.article>.container>.col>.picture-2:hover{
+    opacity: 1;
+}
+/* .article>.container>.col>.text */
+.article>.container>.col>.text{
+    width: 50%;
+}
+.article>.container>.col>.text>.title{
+    font-size: 1.5em;
+    padding: 20px 40px;
+}
+.article>.container>.col>.text>.content{
+    padding: 5px 40px 0 ;
+    font-size: .9em;
+    line-height: 1.5em;
+    color: #bbbbbb;
+}
+.article>.container>.col>.text>.content>.line{
+    display: block;
+    position: relative;
+    top:50px;
+    border:1px solid#eeeeee;
+}
+.article>.container>.col>.text>.detail{
+    font-size: .9em;
+    padding: 65px 40px 0;
+    color: #cccccc;
+}
+.article>.container>.col>.text>.detail>.view{
+    padding:5px 0 ;
+    padding-right: 25px;
+}
+@media(max-width:800px){
+    .article{
+        margin:-20px 0;
+    }
+    .article>.container>.col{
+        flex-direction: column;
+        width: 90%;
+        margin-bottom:40px;
+    }
+    .article>.container>.col>.picture{
+        width: 100%;
+    }
+    .article>.container>.col>.text{
+        width: 100%;
+    }
+    .article>.container>.col>.text>.title{
+        font-size: 1em;
+    }
+    .article>.container>.col>.text>.title>br{
+       display: none;
+    }
+    .article>.container>.col>.text>.content,.article>.container>.col>.text>.detail{
+        font-size: .7em ;
+    }
+    .article>.container>.col>.text>.content>.line{
+        top:35px;
+    }
+    .article>.container>.col>.text>.detail{
+        padding:55px 40px 18px 40px;
+    }
+}   
+footer{
+    width:100%;
+    padding:25px 0;
+    background-color: #000000;
+    color:#ffffff;
+    text-align: center;
+}

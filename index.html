@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Diary</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="nav.css" />
+    <link rel="stylesheet" href="gallery.css" />
+    <link rel="stylesheet" href="article.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="title">Fashion Diary</div>
+        <div class="menu">
+            <div class="item">Home</div>
+            <div class="item">About</div>
+            <div class="item">Blog</div>
+            <div class="item">Contact</div>
+        </div>
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="item">Home</div>
+            <div class="item">About</div>
+            <div class="item">Blog</div>
+            <div class="item">Content</div>
+            <div onclick="closeMobileMenu();" class="close">X</div>
+        </div>
+        <div onclick="showMobileMenu();" class="mobile-menu-trigger">
+            <div class="lines">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="memo">
+            STYLE IS A <br>CHOICE. <br>MAKE YEAR.
+        </div>
+    </nav>
+    <section class="gallery">
+        <div class="col">
+            <div class="block picture picture-1">
+                <div class="words">
+                    <div class="title">READ</div>
+                    <div class="story">THE BLOG</div>
+                    <div class="action">
+                        <span class="btn">Read More</span>
+                    </div>
+                </div>
+            </div>
+            <div class="block text">
+                <div class="words">
+                    <div class="title">Hello</div>
+                    <div class="story">I'm PengPeng</div>
+                    <div class="action">
+                        <span class="btn">Read More</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="block text">
+                <div class="words">
+                    <div class="title">Advertise with</div>
+                    <div class="story">Fashion Diva</div>
+                    <div class="action">
+                        <span class="btn">Read More</span>
+                    </div>
+                </div>
+            </div>
+            <div class="block picture picture-2">
+                <div class="words">
+                    <div class="title">Contribute</div>
+                    <div class="story">TO THE BLOG</div>
+                    <div class="action">
+                        <span class="btn">Read More</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="article">
+        <div class="container">
+            <div class="col">
+                <div class="picture picture-1"></div>
+                <div class="text">
+                    <div class="title">
+                        What I Wore:Travel <br>Edition
+                    </div>
+                    <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aliquid et
+                        blanditiis officia expedita ducimus, hic eius nostrum. Quae, cum.
+                        <span class="line"></span>
+                    </div>
+                    <div class="detail">
+                        <span class="view">85 views</span>
+                        <span>White comment</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class=" col">
+                <div class="picture picture-2"></div>
+                <div class="text">
+                    <div class="title">
+                        Picking the Perfect Booties <br> for You
+                    </div>
+                    <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aliquid et
+                        blanditiis officia expedita ducimus, hic eius nostrum. Quae, cum.
+                        <span class="line"></span>
+                    </div>
+                    <div class="detail">
+                        <span class="view">85 views</span>
+                        <span>White comment</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy;20201219
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
